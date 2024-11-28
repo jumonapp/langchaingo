@@ -9,9 +9,9 @@ import (
 	"github.com/amikos-tech/chroma-go/openai"
 	chromatypes "github.com/amikos-tech/chroma-go/types"
 	"github.com/google/uuid"
-	"github.com/tmc/langchaingo/embeddings"
-	"github.com/tmc/langchaingo/schema"
-	"github.com/tmc/langchaingo/vectorstores"
+	"github.com/jumonapp/langchaingo/embeddings"
+	"github.com/jumonapp/langchaingo/schema"
+	"github.com/jumonapp/langchaingo/vectorstores"
 	"golang.org/x/exp/maps"
 )
 

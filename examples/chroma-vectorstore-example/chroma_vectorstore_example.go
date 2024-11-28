@@ -9,9 +9,9 @@ import (
 
 	chroma_go "github.com/amikos-tech/chroma-go/types"
 	"github.com/google/uuid"
-	"github.com/tmc/langchaingo/schema"
-	"github.com/tmc/langchaingo/vectorstores"
-	"github.com/tmc/langchaingo/vectorstores/chroma"
+	"github.com/jumonapp/langchaingo/schema"
+	"github.com/jumonapp/langchaingo/vectorstores"
+	"github.com/jumonapp/langchaingo/vectorstores/chroma"
 )
 
 func main() {

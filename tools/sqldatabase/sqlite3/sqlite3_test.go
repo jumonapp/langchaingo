@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/jumonapp/langchaingo/tools/sqldatabase"
+	_ "github.com/jumonapp/langchaingo/tools/sqldatabase/sqlite3"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/tools/sqldatabase"
-	_ "github.com/tmc/langchaingo/tools/sqldatabase/sqlite3"
 )
 
 func Test(t *testing.T) {

@@ -51,7 +51,6 @@ type Doer interface {
 // New returns a new OpenAI client.
 func New(token string, model string, baseURL string, organization string,
 	apiType APIType, apiVersion string, httpClient Doer, embeddingModel string,
-	responseFormat *ResponseFormat,
 	opts ...Option,
 ) (*Client, error) {
 	c := &Client{
@@ -63,7 +62,6 @@ func New(token string, model string, baseURL string, organization string,
 		apiType:        apiType,
 		apiVersion:     apiVersion,
 		httpClient:     httpClient,
-		ResponseFormat: responseFormat,
 	}
 
 	for _, opt := range opts {

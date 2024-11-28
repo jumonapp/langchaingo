@@ -1,8 +1,8 @@
 package openai
 
 import (
-	"github.com/tmc/langchaingo/callbacks"
-	"github.com/tmc/langchaingo/llms/openai/internal/openaiclient"
+	"github.com/jumonapp/langchaingo/callbacks"
+	"github.com/jumonapp/langchaingo/llms/openai/internal/openaiclient"
 )
 
 const (
@@ -32,8 +32,6 @@ type options struct {
 	organization string
 	apiType      APIType
 	httpClient   openaiclient.Doer
-
-	responseFormat *ResponseFormat
 
 	// required when APIType is APITypeAzure or APITypeAzureAD
 	apiVersion     string
@@ -126,12 +124,5 @@ func WithHTTPClient(client openaiclient.Doer) Option {
 func WithCallback(callbackHandler callbacks.Handler) Option {
 	return func(opts *options) {
 		opts.callbackHandler = callbackHandler
-	}
-}
-
-// WithResponseFormat allows setting a custom response format.
-func WithResponseFormat(responseFormat *ResponseFormat) Option {
-	return func(opts *options) {
-		opts.responseFormat = responseFormat
 	}
 }

@@ -7,8 +7,8 @@ import (
 	"log"
 	"strings"
 
-	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/llms/openai"
+	"github.com/jumonapp/langchaingo/llms"
+	"github.com/jumonapp/langchaingo/llms/openai"
 )
 
 func main() {

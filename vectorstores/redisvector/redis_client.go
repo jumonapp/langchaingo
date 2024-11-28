@@ -9,8 +9,8 @@ import (
 	"strconv"
 
 	"github.com/google/uuid"
+	"github.com/jumonapp/langchaingo/schema"
 	"github.com/redis/rueidis"
-	"github.com/tmc/langchaingo/schema"
 	"golang.org/x/exp/maps"
 )
 

@@ -9,11 +9,11 @@ import (
 	"io"
 
 	"github.com/google/uuid"
+	"github.com/jumonapp/langchaingo/embeddings"
+	"github.com/jumonapp/langchaingo/schema"
+	"github.com/jumonapp/langchaingo/vectorstores"
 	opensearchgo "github.com/opensearch-project/opensearch-go"
 	"github.com/opensearch-project/opensearch-go/opensearchapi"
-	"github.com/tmc/langchaingo/embeddings"
-	"github.com/tmc/langchaingo/schema"
-	"github.com/tmc/langchaingo/vectorstores"
 )
 
 // Store is a wrapper around the chromaGo API and client.

@@ -1,10 +1,10 @@
-module github.com/tmc/langchaingo/examples/llmmath-chain-example
+module github.com/masacento/langchaingo/examples/llmmath-chain-example
 
 go 1.22.0
 
 toolchain go1.22.1
 
-require github.com/tmc/langchaingo v0.1.13-pre.0
+require github.com/masacento/langchaingo v0.1.13-pre.0
 
 require (
 	github.com/Masterminds/goutils v1.1.1 // indirect

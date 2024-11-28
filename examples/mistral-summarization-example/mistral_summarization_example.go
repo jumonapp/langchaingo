@@ -6,10 +6,10 @@ import (
 	"log"
 	"strings"
 
-	"github.com/tmc/langchaingo/chains"
-	"github.com/tmc/langchaingo/documentloaders"
-	"github.com/tmc/langchaingo/llms/mistral"
-	"github.com/tmc/langchaingo/textsplitter"
+	"github.com/jumonapp/langchaingo/chains"
+	"github.com/jumonapp/langchaingo/documentloaders"
+	"github.com/jumonapp/langchaingo/llms/mistral"
+	"github.com/jumonapp/langchaingo/textsplitter"
 )
 
 func main() {

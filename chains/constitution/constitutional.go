@@ -5,11 +5,11 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/tmc/langchaingo/chains"
-	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/memory"
-	"github.com/tmc/langchaingo/prompts"
-	"github.com/tmc/langchaingo/schema"
+	"github.com/jumonapp/langchaingo/chains"
+	"github.com/jumonapp/langchaingo/llms"
+	"github.com/jumonapp/langchaingo/memory"
+	"github.com/jumonapp/langchaingo/prompts"
+	"github.com/jumonapp/langchaingo/schema"
 )
 
 var (

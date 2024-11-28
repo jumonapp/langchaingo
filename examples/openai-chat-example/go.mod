@@ -1,10 +1,12 @@
-module github.com/tmc/langchaingo/examples/openai-chat-example
+module github.com/masacento/langchaingo/examples/openai-chat-example
 
 go 1.22.0
 
 toolchain go1.22.1
 
-require github.com/tmc/langchaingo v0.1.13-pre.0
+require github.com/masacento/langchaingo v0.1.13-pre.0
+
+replace github.com/masacento/langchaingo => ../../
 
 require (
 	github.com/dlclark/regexp2 v1.10.0 // indirect

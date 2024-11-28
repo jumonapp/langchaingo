@@ -66,6 +66,8 @@ type CallOptions struct {
 	// Supported MIME types are: text/plain: (default) Text output.
 	// application/json: JSON response in the response candidates.
 	ResponseMIMEType string `json:"response_mime_type,omitempty"`
+
+	ResponseFormat *ResponseFormat `json:"response_format,omitempty"`
 }
 
 // Tool is a tool that can be used by the model.
@@ -100,6 +102,15 @@ type ToolChoice struct {
 type FunctionReference struct {
 	// Name is the name of the function.
 	Name string `json:"name"`
+}
+
+// ResponseFormat is the format of the response.
+type ResponseFormat struct {
+	Type        string `json:"type"`
+	Name        string `json:"name"`
+	Description string `json:"description,omitempty"`
+	Schema      any    `json:"schema"`
+	Strict      bool   `json:"strict"`
 }
 
 // FunctionCallBehavior is the behavior to use when calling functions.
@@ -278,5 +289,11 @@ func WithMetadata(metadata map[string]interface{}) CallOption {
 func WithResponseMIMEType(responseMIMEType string) CallOption {
 	return func(o *CallOptions) {
 		o.ResponseMIMEType = responseMIMEType
+	}
+}
+
+func WithResponseFormat(responaseFormat *ResponseFormat) CallOption {
+	return func(o *CallOptions) {
+		o.ResponseFormat = responaseFormat
 	}
 }

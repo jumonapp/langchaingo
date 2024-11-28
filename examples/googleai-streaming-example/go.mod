@@ -1,10 +1,10 @@
-module github.com/tmc/langchaingo/examples/googleai-streaming-example
+module github.com/masacento/langchaingo/examples/googleai-streaming-example
 
 go 1.22.0
 
 toolchain go1.22.1
 
-require github.com/tmc/langchaingo v0.1.13-pre.0
+require github.com/masacento/langchaingo v0.1.13-pre.0
 
 require (
 	cloud.google.com/go v0.114.0 // indirect

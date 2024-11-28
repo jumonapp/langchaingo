@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/gocolly/colly"
-	"github.com/tmc/langchaingo/tools"
+	"github.com/jumonapp/langchaingo/tools"
 )
 
 const (

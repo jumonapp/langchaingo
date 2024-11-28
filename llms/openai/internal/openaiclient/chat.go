@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/tmc/langchaingo/llms"
+	"github.com/jumonapp/langchaingo/llms"
 )
 
 const (
@@ -119,16 +119,17 @@ type ResponseFormatJSONSchemaProperty struct {
 	Ref                  string                                       `json:"$ref,omitempty"`
 }
 
-type ResponseFormatJSONSchema struct {
-	Name   string                            `json:"name"`
-	Strict bool                              `json:"strict"`
-	Schema *ResponseFormatJSONSchemaProperty `json:"schema"`
-}
-
 // ResponseFormat is the format of the response.
 type ResponseFormat struct {
-	Type       string                    `json:"type"`
-	JSONSchema *ResponseFormatJSONSchema `json:"json_schema,omitempty"`
+	Type       string                   `json:"type"`
+	JSONSchema ResponseFormatJSONSchema `json:"json_schema,omitempty"`
+}
+
+// ResponseFormatJSONSchema is the JSON Schema response format.
+type ResponseFormatJSONSchema struct {
+	Name   string `json:"name"`
+	Strict bool   `json:"strict"`
+	Schema any    `json:"schema"`
 }
 
 // ChatMessage is a message in a chat request.
